@@ -1,0 +1,129 @@
+\hypertarget{_circle__linedrawing__final_8cpp}{}\doxysection{Circle\+\_\+linedrawing\+\_\+final.\+cpp File Reference}
+\label{_circle__linedrawing__final_8cpp}\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a64928a1beaf9b7e6c5d8558fb9c15013}{plot\+\_\+point}} (int x, int y)
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_ae3db281f4dcfbe611f0e9fba13ad6883}{bresenham\+\_\+circle}} (int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_acab531abaa74a7e664e3986f2522b33a}{r}}, int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_af7601131832c4d97295f90019c8ff8fc}{xc}}, int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a8470a9f95ece04985a5031e745042b7e}{yc}})
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a140d8384e6cc4b02595aa5619715af12}{draw\+\_\+pixel}} (int x, int y)
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a00d5e3e6ffdd21aeb1e11ec1804920f9}{draw\+\_\+line}} (int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a97fcb0e1731b36905e90757f211b1340}{x1}}, int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_ad660c90589efbb535c7d55dc032c1b09}{x2}}, int y1, int y2)
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a3c714568d5ccf7de6894b1ecdb47c797}{concentric\+\_\+circles}} (void)
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a1e3b6d38df0786ccf7f938d60e386aae}{Init}} ()
+\item 
+void \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a70db8bd1d499619f7ff9c1ca2ff3c8df}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_af7601131832c4d97295f90019c8ff8fc}{xc}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a8470a9f95ece04985a5031e745042b7e}{yc}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_acab531abaa74a7e664e3986f2522b33a}{r}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a97fcb0e1731b36905e90757f211b1340}{x1}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a5f1285c04e47d67d87125b6653c68562}{z1}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_ad660c90589efbb535c7d55dc032c1b09}{x2}}
+\item 
+int \mbox{\hyperlink{_circle__linedrawing__final_8cpp_a487c8bcef68b4f19ea2a36b5e32fcfa3}{z2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_ae3db281f4dcfbe611f0e9fba13ad6883}\label{_circle__linedrawing__final_8cpp_ae3db281f4dcfbe611f0e9fba13ad6883}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!bresenham\_circle@{bresenham\_circle}}
+\index{bresenham\_circle@{bresenham\_circle}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{bresenham\_circle()}{bresenham\_circle()}}
+{\footnotesize\ttfamily void bresenham\+\_\+circle (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{xc,  }\item[{int}]{yc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a3c714568d5ccf7de6894b1ecdb47c797}\label{_circle__linedrawing__final_8cpp_a3c714568d5ccf7de6894b1ecdb47c797}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!concentric\_circles@{concentric\_circles}}
+\index{concentric\_circles@{concentric\_circles}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{concentric\_circles()}{concentric\_circles()}}
+{\footnotesize\ttfamily void concentric\+\_\+circles (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a00d5e3e6ffdd21aeb1e11ec1804920f9}\label{_circle__linedrawing__final_8cpp_a00d5e3e6ffdd21aeb1e11ec1804920f9}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!draw\_line@{draw\_line}}
+\index{draw\_line@{draw\_line}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{draw\_line()}{draw\_line()}}
+{\footnotesize\ttfamily void draw\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{x2,  }\item[{int}]{y1,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a140d8384e6cc4b02595aa5619715af12}\label{_circle__linedrawing__final_8cpp_a140d8384e6cc4b02595aa5619715af12}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily void draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a1e3b6d38df0786ccf7f938d60e386aae}\label{_circle__linedrawing__final_8cpp_a1e3b6d38df0786ccf7f938d60e386aae}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!Init@{Init}}
+\index{Init@{Init}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a70db8bd1d499619f7ff9c1ca2ff3c8df}\label{_circle__linedrawing__final_8cpp_a70db8bd1d499619f7ff9c1ca2ff3c8df}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!main@{main}}
+\index{main@{main}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a64928a1beaf9b7e6c5d8558fb9c15013}\label{_circle__linedrawing__final_8cpp_a64928a1beaf9b7e6c5d8558fb9c15013}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!plot\_point@{plot\_point}}
+\index{plot\_point@{plot\_point}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{plot\_point()}{plot\_point()}}
+{\footnotesize\ttfamily void plot\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_acab531abaa74a7e664e3986f2522b33a}\label{_circle__linedrawing__final_8cpp_acab531abaa74a7e664e3986f2522b33a}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!r@{r}}
+\index{r@{r}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily int r}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a97fcb0e1731b36905e90757f211b1340}\label{_circle__linedrawing__final_8cpp_a97fcb0e1731b36905e90757f211b1340}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!x1@{x1}}
+\index{x1@{x1}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{x1}{x1}}
+{\footnotesize\ttfamily int x1}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_ad660c90589efbb535c7d55dc032c1b09}\label{_circle__linedrawing__final_8cpp_ad660c90589efbb535c7d55dc032c1b09}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!x2@{x2}}
+\index{x2@{x2}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily int x2}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_af7601131832c4d97295f90019c8ff8fc}\label{_circle__linedrawing__final_8cpp_af7601131832c4d97295f90019c8ff8fc}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!xc@{xc}}
+\index{xc@{xc}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{xc}{xc}}
+{\footnotesize\ttfamily int xc}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a8470a9f95ece04985a5031e745042b7e}\label{_circle__linedrawing__final_8cpp_a8470a9f95ece04985a5031e745042b7e}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!yc@{yc}}
+\index{yc@{yc}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{yc}{yc}}
+{\footnotesize\ttfamily int yc}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a5f1285c04e47d67d87125b6653c68562}\label{_circle__linedrawing__final_8cpp_a5f1285c04e47d67d87125b6653c68562}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!z1@{z1}}
+\index{z1@{z1}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{z1}{z1}}
+{\footnotesize\ttfamily int z1}
+
+\mbox{\Hypertarget{_circle__linedrawing__final_8cpp_a487c8bcef68b4f19ea2a36b5e32fcfa3}\label{_circle__linedrawing__final_8cpp_a487c8bcef68b4f19ea2a36b5e32fcfa3}} 
+\index{Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}!z2@{z2}}
+\index{z2@{z2}!Circle\_linedrawing\_final.cpp@{Circle\_linedrawing\_final.cpp}}
+\doxysubsubsection{\texorpdfstring{z2}{z2}}
+{\footnotesize\ttfamily int z2}
+

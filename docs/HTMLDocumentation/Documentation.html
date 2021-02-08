@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Code documentation</title>
+</head>
+<body>
+
+<h1> Trees as blocks- A sketch of Wetherell Shannon Algorithm as interpreted by us</h1>
+<p>
+<br>
+• Do a post-order traversal of the tree<br>
+• if the node is a leaf, give it an x coordinate of 0<br>
+• else, place its right subtree as close to the left as possible without conflict<br>
+   &nbsp;&nbsp;&nbsp; • Use the same mod technique as in the WS algorithm to move the tree in O(n) time<br>
+• place the node halfway between its children<br>
+• Do a second walk of the tree, adding the accumulated mod value to the x coordinate<br>
+</p>
+
+
+<h1>The following additions were made by Reingold and Tilford to the algorithm</h1>
+<h2>Contours</h2>
+<p>The contour of a tree is a list of the maximum or minimum coordinates of the a side of the tree. eg. If we trace down the left side of the left tree, taking the minimum x coordinate of each level, 
+we call it the left contour of the tree. If we trace down the right side, taking the rightmost x-coordinate from each level, 
+,it is the right contour of the tree.
+
+We found the correct value for how far we had to push the right tree, but to do so we had to scan every node in both 
+subtrees to get the contours we needed. Since it is very likely an O(n<sup>2</sup>) operation, Reingold and Tilford introduce a concept confusingly called threads, 
+which are not at all like the threads used for parallel execution.
+</p>
+
+<h2>Threads</h2>
+<p>
+Threads are a method for reducing the amount of time it takes to scan a subtree for its contour by creating links between nodes on the contour
+if one is not already the child of the other.
+We can also take advantage of the fact that, if the one tree is deeper than the other, we only need to descend as far as the shorter tree. 
+Anything deeper than that will not affect the separation necessary between the two trees, since there can be no conflicts between them.
+Using threads and only traversing as deeply as we need to, we can actually get a contour for a tree and set our threads in linear O(n) time .
+</p>
+
+<h2>
+Given below are some examples of the code output of our final algorithm.
+</h2>
+<figure>
+
+<img src="Capture4.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 1.</figcaption><br>
+<img src="Capture6.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 2.</figcaption><br>
+
+<img src="Capture7.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 3.</figcaption><br>
+<img src="Capture10.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 4.</figcaption><br>
+
+<img src="Capture8.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 5.</figcaption><br>
+<img src="Capture9.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 6.</figcaption><br>
+
+<img src="Capture2.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 7.</figcaption><br>
+<img src="Capture1.png" alt="My test image" width="500" height="300">
+<figcaption>Figure 8.</figcaption><br>
+<br>
+<br>
+<h2>Time analysis of the given code</h2>
+<img src="Capture12.png" alt="My test image" width="600" height="366">
+<figcaption>Figure 9. <br>
+Table showing maximum and minimum time taken for the code to execute</figcaption>
+
+<img src="Capture11.png" alt="My test image" width="1000" height="500">
+<figcaption>Figure 10.<br>
+Graph depecting real world analysis of the time taken by the code to execute.
+
+The code was executed 20 times for the same number of nodes each time.Maximum and minimum time to execute for the algorithm
+to run was noted for each input. It was built and run as a MS visual studio console application. The mentioned data is plotted above.</figcaption></figure>
+<p>
+The given data provides strong evidence that the code runs in O(n) time. As we are doubling the number of nodes, the time to run for the code is also doubling approximately.
+<br>
+<br>
+<h2>Issues and limitations of code</h2>
+<p>
+• In figure 8. we observe that due to the possible intersection of nodes with value 10 and 11 respectively, a mod value is added to the right subtrees. 
+However, this has led to a slight positioning issue with the parent node and the line at the top.<br>
+• The display of trees is limited by window size i.e. Only a fixed number of nodes can be fit inside the window. A possible solution could be dynamic radius of the nodes 
+and line length depending on the total number of nodes. Due to time limitations we were unable to implement it.
+</p>
+
+<h2>References</h2>
+•https://llimllib.github.io/pymag-trees/<br>
+•http://lazyfoo.net/tutorials/OpenGL/index.php<br>
+•C. Wetherell, A. Shannon, Tidy Drawings of Trees, IEEE Transactions on Software Engineering. Volume 5, Issue 5<br>
+•E. M. Reingold, J. S Tilford, Tidier Drawings of Trees, IEEE Transactions on Software Engineering. Volume 7, Issue 2<br>
+
+</body>
+</html>

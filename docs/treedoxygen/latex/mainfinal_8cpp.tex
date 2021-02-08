@@ -1,0 +1,55 @@
+\hypertarget{mainfinal_8cpp}{}\doxysection{mainfinal.\+cpp File Reference}
+\label{mainfinal_8cpp}\index{mainfinal.cpp@{mainfinal.cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}bstfinal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}drawfinal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mainfinal_8cpp_a66cb98cee4ec0167b1ed423368bbb86d}{M\+I\+N\+S\+EP}}~50									/$\ast$! \textbackslash{}def Minimum seperation between roots of subtrees $\ast$/
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{mainfinal_8cpp_aac860870066e4bda8300df76dd1c508a}{setup}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$root, int level, \mbox{\hyperlink{structextreme}{extreme}} \&rightmost, \mbox{\hyperlink{structextreme}{extreme}} \&leftmost)
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{mainfinal_8cpp_aa7d81a68464c89f473747dfff957bb1f}{petrify}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$root, int pos)
+\item 
+int \mbox{\hyperlink{mainfinal_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mainfinal_8cpp_a66cb98cee4ec0167b1ed423368bbb86d}\label{mainfinal_8cpp_a66cb98cee4ec0167b1ed423368bbb86d}} 
+\index{mainfinal.cpp@{mainfinal.cpp}!MINSEP@{MINSEP}}
+\index{MINSEP@{MINSEP}!mainfinal.cpp@{mainfinal.cpp}}
+\doxysubsubsection{\texorpdfstring{MINSEP}{MINSEP}}
+{\footnotesize\ttfamily \#define M\+I\+N\+S\+EP~50									/$\ast$! \textbackslash{}def Minimum seperation between roots of subtrees $\ast$/}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mainfinal_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{mainfinal_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{mainfinal.cpp@{mainfinal.cpp}!main@{main}}
+\index{main@{main}!mainfinal.cpp@{mainfinal.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mainfinal_8cpp_aa7d81a68464c89f473747dfff957bb1f}\label{mainfinal_8cpp_aa7d81a68464c89f473747dfff957bb1f}} 
+\index{mainfinal.cpp@{mainfinal.cpp}!petrify@{petrify}}
+\index{petrify@{petrify}!mainfinal.cpp@{mainfinal.cpp}}
+\doxysubsubsection{\texorpdfstring{petrify()}{petrify()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}}$\ast$ petrify (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{root,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+This procedures forms the pre-\/order traversal of the tree converting the relative coordinates to absolute coordinates \mbox{\Hypertarget{mainfinal_8cpp_aac860870066e4bda8300df76dd1c508a}\label{mainfinal_8cpp_aac860870066e4bda8300df76dd1c508a}} 
+\index{mainfinal.cpp@{mainfinal.cpp}!setup@{setup}}
+\index{setup@{setup}!mainfinal.cpp@{mainfinal.cpp}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}}$\ast$ setup (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{root,  }\item[{int}]{level,  }\item[{\mbox{\hyperlink{structextreme}{extreme}} \&}]{rightmost,  }\item[{\mbox{\hyperlink{structextreme}{extreme}} \&}]{leftmost }\end{DoxyParamCaption})}
+

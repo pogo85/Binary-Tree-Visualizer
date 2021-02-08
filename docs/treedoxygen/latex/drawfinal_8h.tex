@@ -1,0 +1,172 @@
+\hypertarget{drawfinal_8h}{}\doxysection{drawfinal.\+h File Reference}
+\label{drawfinal_8h}\index{drawfinal.h@{drawfinal.h}}
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{drawfinal_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}{R\+A\+D\+I\+US}}~10								/$\ast$! \textbackslash{}def radius of circle$\ast$/
+\item 
+\#define \mbox{\hyperlink{drawfinal_8h_a0cbea62f1ce2043dd08108e65ed8de1d}{S\+C\+A\+LE}}~30								/$\ast$!Y \textbackslash{}def coordinate Scaling factor$\ast$/
+\item 
+\#define \mbox{\hyperlink{drawfinal_8h_a58dde5b4c75245b4660a165318cac36b}{W\+I\+N\+D\+OW}}~800							    /$\ast$! \textbackslash{}def Size of Window$\ast$/
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{drawfinal_8h_a2858154e2009b0e6e616f313177762bc}{init}} (void)
+\begin{DoxyCompactList}\small\item\em temp root of tree \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drawfinal_8h_abd2a955350eb2784b2132c74202e3b60}{Plot\+Pixel}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Plot\+Pixel at given coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drawfinal_8h_a2a90a4b2660eba917b877f5e9701f2ab}{draw\+\_\+line}} (int x0, int y0, int x1, int y1, int dir)
+\item 
+void \mbox{\hyperlink{drawfinal_8h_a99e3fa28dd665f98c67edf7f36a736e6}{connect\+Nodes}} (int x1, int y1, int x2, int y2, int check)
+\item 
+void \mbox{\hyperlink{drawfinal_8h_a1274396b40b16569769a21263f1c616e}{plot\+\_\+point}} (int xc, int yc, int x, int y)
+\begin{DoxyCompactList}\small\item\em plot pixels based on a circle\textquotesingle{}s symmetry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drawfinal_8h_a827a46a30753360ed09cf47163a699c0}{draw\+\_\+circle}} (int xc, int yc)
+\begin{DoxyCompactList}\small\item\em Draw circle using midpoint circle algorithm. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{drawfinal_8h_ae65f32855e822518697179953ad94eda}{to\+\_\+string}} (int n)
+\begin{DoxyCompactList}\small\item\em function to convert integer to string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drawfinal_8h_a3cc0b576df5432c54944b818128320f2}{draw\+Text}} (int data, int x0, int y0)
+\begin{DoxyCompactList}\small\item\em Write the data inside the drawn node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drawfinal_8h_abb9077e9642d38ecc503da0ebb6859c8}{inorder}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$root)
+\item 
+void \mbox{\hyperlink{drawfinal_8h_a56c5cf8a568cff737ff95520cbe6b405}{draw}} ()
+\item 
+void \mbox{\hyperlink{drawfinal_8h_a817837e5681f7d0152c9e83dcffe52a5}{draw\+\_\+main}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$root, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{drawfinal_8h_aa22f9d0b73b956e0fcb40e760a67ea3a}{temproot}} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{drawfinal_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}\label{drawfinal_8h_aa4f8ea40228c3c3a9a7143b1d1ad8956}} 
+\index{drawfinal.h@{drawfinal.h}!RADIUS@{RADIUS}}
+\index{RADIUS@{RADIUS}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{RADIUS}{RADIUS}}
+{\footnotesize\ttfamily \#define R\+A\+D\+I\+US~10								/$\ast$! \textbackslash{}def radius of circle$\ast$/}
+
+\mbox{\Hypertarget{drawfinal_8h_a0cbea62f1ce2043dd08108e65ed8de1d}\label{drawfinal_8h_a0cbea62f1ce2043dd08108e65ed8de1d}} 
+\index{drawfinal.h@{drawfinal.h}!SCALE@{SCALE}}
+\index{SCALE@{SCALE}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{SCALE}{SCALE}}
+{\footnotesize\ttfamily \#define S\+C\+A\+LE~30								/$\ast$!Y \textbackslash{}def coordinate Scaling factor$\ast$/}
+
+\mbox{\Hypertarget{drawfinal_8h_a58dde5b4c75245b4660a165318cac36b}\label{drawfinal_8h_a58dde5b4c75245b4660a165318cac36b}} 
+\index{drawfinal.h@{drawfinal.h}!WINDOW@{WINDOW}}
+\index{WINDOW@{WINDOW}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{WINDOW}{WINDOW}}
+{\footnotesize\ttfamily \#define W\+I\+N\+D\+OW~800							    /$\ast$! \textbackslash{}def Size of Window$\ast$/}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{drawfinal_8h_a99e3fa28dd665f98c67edf7f36a736e6}\label{drawfinal_8h_a99e3fa28dd665f98c67edf7f36a736e6}} 
+\index{drawfinal.h@{drawfinal.h}!connectNodes@{connectNodes}}
+\index{connectNodes@{connectNodes}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{connectNodes()}{connectNodes()}}
+{\footnotesize\ttfamily void connect\+Nodes (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{check }\end{DoxyParamCaption})}
+
+Distance between two nodes.\mbox{\Hypertarget{drawfinal_8h_a56c5cf8a568cff737ff95520cbe6b405}\label{drawfinal_8h_a56c5cf8a568cff737ff95520cbe6b405}} 
+\index{drawfinal.h@{drawfinal.h}!draw@{draw}}
+\index{draw@{draw}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{drawfinal_8h_a827a46a30753360ed09cf47163a699c0}\label{drawfinal_8h_a827a46a30753360ed09cf47163a699c0}} 
+\index{drawfinal.h@{drawfinal.h}!draw\_circle@{draw\_circle}}
+\index{draw\_circle@{draw\_circle}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{draw\_circle()}{draw\_circle()}}
+{\footnotesize\ttfamily void draw\+\_\+circle (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc }\end{DoxyParamCaption})}
+
+
+
+Draw circle using midpoint circle algorithm. 
+
+\mbox{\Hypertarget{drawfinal_8h_a2a90a4b2660eba917b877f5e9701f2ab}\label{drawfinal_8h_a2a90a4b2660eba917b877f5e9701f2ab}} 
+\index{drawfinal.h@{drawfinal.h}!draw\_line@{draw\_line}}
+\index{draw\_line@{draw\_line}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{draw\_line()}{draw\_line()}}
+{\footnotesize\ttfamily void draw\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{drawfinal_8h_a817837e5681f7d0152c9e83dcffe52a5}\label{drawfinal_8h_a817837e5681f7d0152c9e83dcffe52a5}} 
+\index{drawfinal.h@{drawfinal.h}!draw\_main@{draw\_main}}
+\index{draw\_main@{draw\_main}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{draw\_main()}{draw\_main()}}
+{\footnotesize\ttfamily void draw\+\_\+main (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{root,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{drawfinal_8h_a3cc0b576df5432c54944b818128320f2}\label{drawfinal_8h_a3cc0b576df5432c54944b818128320f2}} 
+\index{drawfinal.h@{drawfinal.h}!drawText@{drawText}}
+\index{drawText@{drawText}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void draw\+Text (\begin{DoxyParamCaption}\item[{int}]{data,  }\item[{int}]{x0,  }\item[{int}]{y0 }\end{DoxyParamCaption})}
+
+
+
+Write the data inside the drawn node. 
+
+\mbox{\Hypertarget{drawfinal_8h_a2858154e2009b0e6e616f313177762bc}\label{drawfinal_8h_a2858154e2009b0e6e616f313177762bc}} 
+\index{drawfinal.h@{drawfinal.h}!init@{init}}
+\index{init@{init}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+temp root of tree 
+
+Initialize Open\+GL \mbox{\Hypertarget{drawfinal_8h_abb9077e9642d38ecc503da0ebb6859c8}\label{drawfinal_8h_abb9077e9642d38ecc503da0ebb6859c8}} 
+\index{drawfinal.h@{drawfinal.h}!inorder@{inorder}}
+\index{inorder@{inorder}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{inorder()}{inorder()}}
+{\footnotesize\ttfamily void inorder (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+Inorder traversal of tree\mbox{\Hypertarget{drawfinal_8h_a1274396b40b16569769a21263f1c616e}\label{drawfinal_8h_a1274396b40b16569769a21263f1c616e}} 
+\index{drawfinal.h@{drawfinal.h}!plot\_point@{plot\_point}}
+\index{plot\_point@{plot\_point}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{plot\_point()}{plot\_point()}}
+{\footnotesize\ttfamily void plot\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{xc,  }\item[{int}]{yc,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+plot pixels based on a circle\textquotesingle{}s symmetry 
+
+\mbox{\Hypertarget{drawfinal_8h_abd2a955350eb2784b2132c74202e3b60}\label{drawfinal_8h_abd2a955350eb2784b2132c74202e3b60}} 
+\index{drawfinal.h@{drawfinal.h}!PlotPixel@{PlotPixel}}
+\index{PlotPixel@{PlotPixel}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{PlotPixel()}{PlotPixel()}}
+{\footnotesize\ttfamily void Plot\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Plot\+Pixel at given coordinate. 
+
+\mbox{\Hypertarget{drawfinal_8h_ae65f32855e822518697179953ad94eda}\label{drawfinal_8h_ae65f32855e822518697179953ad94eda}} 
+\index{drawfinal.h@{drawfinal.h}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily string to\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+function to convert integer to string 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{drawfinal_8h_aa22f9d0b73b956e0fcb40e760a67ea3a}\label{drawfinal_8h_aa22f9d0b73b956e0fcb40e760a67ea3a}} 
+\index{drawfinal.h@{drawfinal.h}!temproot@{temproot}}
+\index{temproot@{temproot}!drawfinal.h@{drawfinal.h}}
+\doxysubsubsection{\texorpdfstring{temproot}{temproot}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}}$\ast$ temproot = N\+U\+LL}
+
