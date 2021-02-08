@@ -3,7 +3,8 @@ Tidy Drawings of Trees by Reingold and Tilford.
 
 Libraries required: GLUT
 
-Compile: g++ ./Tree-drawing/main.cpp -lglut -lGL -lGLU 
+Compile: g++ ./Tree-drawing/main.cpp -lglut -lGL -lGLU
+
 Run: ./Tree-drawing/TreeVisualizer 
 Documentation:
 1. Documentation/Circleandlinedoxygen/html/index.html for bresenham's
